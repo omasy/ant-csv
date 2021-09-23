@@ -7,14 +7,18 @@ SPECIFICATION:
 - CSVReader is the reader class which is called within the base class
 
 USAGE:
-import system.csv.*;
+```import system.csv.*;```
 
 Include the jar file ant-csv.jar in your list of classpath or in your reference library if your using eclipse as your IDE
 
+DEPENDENCIES:
+```import org.apache.commons.csv.*;```
+
 SAMPLE CODE:
-CSVUtils csvUtil=new CSVUtils();
-fields=new String[]{"Coming", "Going", "Base", "Count"};
-header=new Object[]{"Coming", "Going", "Base", "Count"};
+
+```CSVUtils csvUtil=new CSVUtils();
+String[] fields=new String[]{"Coming", "Going", "Base", "Count"};
+Object[] header=new Object[]{"Coming", "Going", "Base", "Count"};
 
 /*** Calling the reader ***/
 CSVReader reader=csvUtil.reader();
@@ -24,14 +28,11 @@ CSVWriter writer=csvUtil.writer();
 
 /*** Reading a created CSV File ***/
 reader.header(fields);
-reader.fIn(logPath);
+reader.fIn('logPath');
 logData=reader.readCSV(fields);
 
 /*** Writing a CSV File ***/
 writer.header(header);
-writer.fOut(logPath);
-writer.writeCSV(newData);
-
-DEPENDENCIES:
-import org.apache.commons.csv.*;
+writer.fOut('logPath');
+writer.writeCSV('data');
 
