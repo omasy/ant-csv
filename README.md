@@ -1,20 +1,20 @@
 # ant-csv
 Antware CSV Repo Utility Class is all in one CSV Object built on top of Common CSV Java Library for creating a csv file, writing and manipulating excel document.
 
-SPECIFICATION:
+#### SPECIFICATION:
 - Base Class is CSVUtils which extend child classes
 - CSVWriter is the write class which is called within the base class
 - CSVReader is the reader class which is called within the base class
 
-USAGE:
+##### USAGE:
 ```import system.csv.*;```
 
 Include the jar file ant-csv.jar in your list of classpath or in your reference library if your using eclipse as your IDE
 
-DEPENDENCIES:
+##### DEPENDENCIES:
 ```import org.apache.commons.csv.*;```
 
-SAMPLE CODE:
+##### SAMPLE CODE:
 ```
 CSVUtils csvUtil=new CSVUtils();
 String[] fields=new String[]{"Coming", "Going", "Base", "Count"};
