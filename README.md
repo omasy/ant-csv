@@ -15,8 +15,8 @@ DEPENDENCIES:
 ```import org.apache.commons.csv.*;```
 
 SAMPLE CODE:
-
-```CSVUtils csvUtil=new CSVUtils();
+```
+CSVUtils csvUtil=new CSVUtils();
 String[] fields=new String[]{"Coming", "Going", "Base", "Count"};
 Object[] header=new Object[]{"Coming", "Going", "Base", "Count"};
 
